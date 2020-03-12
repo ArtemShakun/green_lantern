@@ -22,14 +22,14 @@ def is_two_objects_has_same_type(first: Any, second: Any) -> bool:
     If @first and @second has same type should return True
     In another case should return False
     """
-    return type(first) == type(second)
+
 
 def is_two_objects_is_the_same_objects(first: Any, second: Any) -> bool:
     """
     If @first and @second has same objects should return True
     In another case should return False
     """
-    return first is second
+
 
 def multiple_ints(first_value: int, second_value: int) -> int:
     """
@@ -46,9 +46,7 @@ def multiple_ints(first_value: int, second_value: int) -> int:
         Product of elements
     """
     try:
-        return int(first_value) * int(second_value)
-    except TypeError:
-        raise TypeError("Not valid input data")
+
 
 
 def multiple_ints_with_conversion(first_value: Any, second_value: Any) -> int:
@@ -79,9 +77,7 @@ def multiple_ints_with_conversion(first_value: Any, second_value: Any) -> int:
         >>> "Not valid input data"
     """
     try:
-        return int(first_value) * int(second_value)
-    except ValueError:
-        raise ValueError("Not valid input data")
+
 
 
 def is_word_in_text(word: str, text: str) -> bool:
@@ -100,8 +96,7 @@ def is_word_in_text(word: str, text: str) -> bool:
         >>> False
 
     """
-    return word in text
-
+    
 
 
 def some_loop_exercise() -> list:
