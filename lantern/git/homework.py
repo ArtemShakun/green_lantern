@@ -80,7 +80,7 @@ def multiple_ints_with_conversion(first_value: Any, second_value: Any) -> int:
     """
     try:
         return int(first_value)*int(second_value)
-    except ValueError:
+    except TypeError:
         return "Not valid input data"
 
 
