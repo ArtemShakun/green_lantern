@@ -15,4 +15,4 @@ class CountryAdmin(admin.ModelAdmin):
 
 @admin.register(Dealer)
 class DealerAdmin(admin.ModelAdmin):
-    pass
+    list_display = ('user',)

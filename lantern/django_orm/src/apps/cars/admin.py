@@ -3,7 +3,7 @@ from django.contrib import admin
 # Register your models here.
 from django.utils.safestring import mark_safe
 
-from apps.cars.models import Color, CarModel, CarBrand, Car
+from apps.cars.models import Color, CarModel, CarBrand, Car, Property, Order
 
 
 @admin.register(Color)
@@ -25,6 +25,17 @@ class CarBrandAdmin(admin.ModelAdmin):
             return mark_safe(f'<img src="{obj.logo.url}" style="height: 50px">')
         return '----'
 
+
 @admin.register(Car)
 class CarModelAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Property)
+class PropertyModelAdmin(admin.ModelAdmin):
+    pass
+
+
+@admin.register(Order)
+class OrderModelAdmin(admin.ModelAdmin):
     pass

@@ -43,8 +43,11 @@ class Dealer(models.Model):
 
     class Meta:
         verbose_name = _('Dealer')
-        verbose_name_plural = _('Dealer')
+        verbose_name_plural = _('Dealers')
 
         indexes = [
             Index(fields=['user', ])
         ]
+
+    def __str__(self):
+        return self.user.username
