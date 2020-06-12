@@ -49,5 +49,9 @@ class Dealer(models.Model):
             Index(fields=['user', ])
         ]
 
+    @property
+    def title():
+        return f'{self.get_full_name()}, from: {self.city.name}, email: {self.email}'
+        
     def __str__(self):
         return self.user.username
